@@ -1,0 +1,59 @@
+@import 'colors';
+
+footer {
+  background-color: darkorange;
+  background: linear-gradient(to top left, $medium-orange, $dark-orange);
+  min-height: 20vh;
+  color: white;
+}
+
+footer div.ui.link.list .item {
+  color: white;
+  font-size: 0.6em;
+}
+footer div.ui.link.list a.item {
+  color: white;
+}
+
+footer.ui.grid div.row {
+  padding: 2em;
+}
+
+footer .adresse-madric {
+  h3,
+  p {
+    margin: 0.2em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+}
+
+.adresse-madric .ui.list .ui.image {
+  max-height: 70px;
+  width: auto;
+}
+
+@media only screen and (min-width: 970px) {
+  .adresse-madric .ui.list .item {
+    max-width: 120px;
+  }
+}
+
+@media only screen and (min-width: 969px) and (max-width: 1075px) {
+  .adresse-madric .ui.list .item {
+    max-width: 100px;
+  }
+  .adresse-madric .badge-list {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 968px) {
+  .adresse-madric .ui.list .item {
+    max-width: 70px;
+  }
+  .adresse-madric .badge-list {
+    text-align: center;
+  }
+}

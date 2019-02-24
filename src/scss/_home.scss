@@ -1,0 +1,135 @@
+header.ui.raised.segment.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, $dark-orange, $light-orange);
+  background-image: url('../images/madric_cover.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h1 {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 2em;
+    width: 40%;
+    line-height: 1.2em;
+    text-align: center;
+    span.groupe {
+      display: flex;
+      justify-content: center;
+      color: whitesmoke;
+      font-size: 2em;
+      line-height: 1em;
+      // text-shadow: 2px 2px 5px rgb(78, 43, 0);
+    }
+    // span.madric {
+    //   display: block;
+    //   color: white;
+    //   font-size: 2.2em;
+    //   line-height: 1.2em;
+    // }
+  }
+}
+
+a.ui.huge.blue.animated.splash.button {
+  box-shadow: 3px 3px 3px sienna;
+}
+
+img.agrandir-maison {
+  box-shadow: 8px 7px 10px #888;
+  margin-top: -5em;
+}
+
+div.top-content {
+  text-align: left;
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
+img.groupe-madric {
+  box-shadow: 8px 7px 10px #888;
+}
+
+.agrandir div.ui.large.image {
+  margin-bottom: 1em;
+}
+
+section.realisations.ui.raised.segment {
+  background-color: whitesmoke;
+  background-image: url('../images/36.png');
+  padding: 2em;
+  align-items: center;
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  .realisations-button {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 1em;
+  }
+}
+
+.ui.stackable.container {
+  .ui.list {
+    margin: 1em 0;
+  }
+}
+
+div.ui.raised.card.realisations {
+  width: 100%;
+  padding: 1em;
+}
+
+.realisation-item.ui.image {
+  padding: 1em 0;
+  border-radius: 0.5em;
+}
+.realisation-item {
+  margin: 0.5em 0;
+}
+.second.column {
+  padding-top: 5em;
+}
+.hidden.content {
+  max-width: 80%;
+}
+.citation {
+  font-style: italic;
+  border-left: 3px solid dodgerblue;
+  padding-left: 0.8em;
+}
+.citation-names {
+  font-weight: bold;
+  text-align: right;
+}
+
+@media only screen and (min-width: $largeMonitorBreakpoint) {
+  .ui.stackable.container {
+    .ui.list {
+      margin: 1em 0;
+      line-height: 5em;
+    }
+  }
+
+  section.realisations.ui.raised.segment {
+    .column.first {
+      font-size: 1.2em;
+
+      .ui.grid.projects {
+        margin: 0.5em;
+
+        p {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

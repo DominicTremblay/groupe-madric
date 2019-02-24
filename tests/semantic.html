@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400|Yantramanav:300" rel="stylesheet"> -->
+
+  <!-- Semantic UI -->
+  <link rel="stylesheet" type="text/css" href="../dist/semantic.min.css">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+  <link rel="stylesheet" href="../build/css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="../build/js/jquery-3.3.1.min.js"></script>
+  <script src="../dist/components/visibility.js"></script>
+  <script src="../dist/components/sidebar.js"></script>
+  <script src="../dist/components/transition.js"></script>
+  <!-- <script src="../build/js/main.js"></script> -->
+
+  <title>Le Groupe Madric Inc.</title>
+  <style>
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+  </style>
+
+  <script>
+    $(document)
+      .ready(function () {
+
+        console.log($('.masthead'));
+        // fix menu when passed
+        $('.masthead')
+          .visibility({
+            once: false,
+            onBottomPassed: function () {
+              $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function () {
+              $('.fixed.menu').transition('fade out');
+            }
+          })
+          ;
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+          ;
+      })
+      ;
+  </script>
+</head>
+
+<body class="pusher">
+
+  <!-- Menu hidden by default appears only after the panel is scolled -->
+  <div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      <a href="#" class="active item">Home</a>
+      <a href="#" class="item">Work</a>
+      <a href="#" class="item">Company</a>
+      <a href="#" class="item">Careers</a>
+      <div class="right menu">
+        <div class="item">
+          <a class="ui button">Log In</a>
+        </div>
+        <div class="item">
+          <a class="ui primary button">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item">Work</a>
+    <a class="item">Company</a>
+    <a class="item">Careers</a>
+    <a class="item">Login</a>
+    <a class="item">Signup</a>
+  </div>
+
+  <div class="push">
+    <div class="ui inverted vertical masthead center aligned segment">
+
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <a class="active item">Home</a>
+          <a class="item">Work</a>
+          <a class="item">Company</a>
+          <a class="item">Careers</a>
+          <div class="right item">
+            <a class="ui inverted button">Log in</a>
+            <a class="ui inverted button">Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ui text container">
+        <h1 class="ui header">Imagine-a-Company</h1>
+        <h2>Do whatever you want when you want to.</h2>
+        <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      </div>
+    </div>
+  </div>
+
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, accusamus voluptatem saepe sequi ex nemo aliquam iusto
+    adipisci atque rerum doloribus dicta repellat aliquid quibusdam voluptatum nihil, aut enim ad?</p>
+
+
+
+</body>
+
+</html>

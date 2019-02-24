@@ -1,0 +1,104 @@
+div.splash.ajout-etage {
+  div.splash-image {
+    background-image: url('../images/ajout-etage.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: -0.3em;
+    height: 101%;
+  }
+
+  h1.header {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    border-radius: 0.1em;
+    font-size: 2.5em;
+    border: 0.3em solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+div.first.row {
+  p {
+    margin-top: 2em;
+  }
+}
+
+div.ui.raised.segment.ajout-etage {
+  background-color: whitesmoke;
+  background-image: url(../images/36.png);
+}
+
+section.ajout-etage {
+  p:first-child {
+    margin-top: 2em;
+  }
+}
+
+div.splash.extension-maison {
+  div.splash-image {
+    height: 101%;
+    justify-content: flex-start;
+    background-image: url('../images/extension-maison.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: -0.4em;
+
+    h1.header {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 0.5em;
+      border-radius: 0.1em;
+      font-size: 2.5em;
+      border: 0.3em solid rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+div.splash.moderniser-maison {
+  div.splash-image {
+    height: 101%;
+    justify-content: flex-start;
+    background-image: url('../images/moderniser-maison.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: -0.4em;
+
+    h1.header {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 0.5em;
+      border-radius: 0.1em;
+      font-size: 2.5em;
+      border: 0.3em solid rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+div.splash.reamenagement-bureau {
+  div.splash-image {
+    height: 101%;
+    margin-top: -0.4em;
+    justify-content: flex-start;
+    background-image: url('../images/architects-working-on-blueprints-GLP5QRU.jpg');
+    background-size: cover;
+    background-position: center;
+
+    h1.header {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 0.5em;
+      border-radius: 0.1em;
+      font-size: 2.5em;
+      border: 0.3em solid rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+div.ui.segment.call-madric {
+  z-index: auto;
+  border: 1px solid dodgerblue;
+}
+
+div.ui.segment.call-madric::before {
+  z-index: -2;
+}
+
+div.ui.segment.call-madric::after {
+  z-index: -1;
+}

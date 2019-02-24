@@ -1,0 +1,45 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: dimgray;
+}
+
+main {
+  padding: 2rem;
+}
+
+.align.left {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.align.center {
+  text-align: center;
+  justify-content: center;
+}
+
+// .ui.grid * {
+//   border: 1px solid lightgrey;
+// }
+
+.ui.header {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: rgb(70, 70, 70);
+}
+
+.ui.orange.button {
+  border-radius: 20px;
+  border: 2px solid darkorange;
+  padding: 0.5em 1.5em 0.5em;
+  box-shadow: 3px 3px 5px silver;
+}
+
+.ui.orange.button .visible.content {
+  text-shadow: 2px 2px 2px sienna;
+}
+
+.adresse-madric .badge-list .list {
+  display: flex;
+  align-items: center;
+}

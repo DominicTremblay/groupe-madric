@@ -1,0 +1,233 @@
+@import 'colors';
+
+.ui.secondary.fixed.menu a.item {
+  color: white;
+  border-radius: 10px !important;
+  transition: 0.4s ease-in-out;
+  text-shadow: 1px 1px 3px dimgray;
+}
+
+.ui.secondary.menu a.item:hover {
+  color: blanchedalmond;
+  text-shadow: 1px 1px 1px saddlebrown;
+}
+
+header.ui.segment.secondary-page-header {
+  background: linear-gradient(to top left, $medium-orange, $dark-orange);
+  padding: 0;
+  padding-top: $nav-height;
+  height: 60vh;
+  margin: -1px; /* to compensate for pushable from body */
+}
+
+header.ui.segment.home {
+  height: $header-height;
+}
+
+header.projects {
+  padding-top: $nav-height;
+}
+
+header.ui.segment.secondary-page-header {
+  background: whitesmoke;
+}
+
+.ui.fixed.menu {
+  // background-color: #ff6512;
+  color: white;
+  font-size: 1.2rem;
+  min-height: 5rem;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  z-index: 300;
+}
+
+.ui.ui.fixed.menu .tablet {
+  font-size: 1rem;
+  padding: 0;
+}
+
+.ui.ui.fixed.menu .tablet p {
+  font-size: 0.9rem;
+}
+
+.ui.image.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ui.sidebar.menu {
+  background-color: gainsboro;
+  top: 5rem;
+  z-index: 200;
+}
+
+.swiper-container {
+  height: 96%;
+}
+
+header.secondary-page-header .ui.top.ui.fixed.menu {
+  background: linear-gradient(to top left, $medium-orange, $dark-orange);
+  box-shadow: 2px 5px 5px #aaaaaa;
+}
+
+.ui.top.ui.fixed.menu.nav-up {
+  // top: -$nav-height; // same as header height. use variables in LESS/SASS
+  background-color: $fixed-menu-scroll-color;
+  // border-bottom: 6em solid sienna;
+  transform: translateY(-100%);
+}
+
+.ui.top.ui.fixed.menu.nav-down.undocked {
+  background-color: darkorange;
+  box-shadow: 2px 5px 5px #aaaaaa;
+}
+
+.nav-down {
+  top: 0; // same as header height. use variables in LESS/SASS
+}
+header div.splash {
+  height: 100%;
+}
+
+div.splash-image {
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+div.splash-image img {
+  width: 100%;
+}
+
+div.splash h1.ui.header {
+  margin: 0.1em;
+  align-self: center;
+}
+
+// $smallMobileScreen: 320px;
+// $largestMobileScreen: 768px;
+// $mobileBreakpoint: 991px;
+// $smallMonitorBreakpoint: 1200px;
+// $largeMonitorBreakpoint: 1201px;
+
+@media only screen and (max-width: $smallMobileScreen) {
+  header.ui.segment {
+    height: auto;
+
+    .a-propos {
+      height: 50vh;
+    }
+
+    .contact {
+      height: 30vh;
+    }
+  }
+  header div.splash h1.medium.header {
+    display: none;
+  }
+  header div.splash h1.huge.header {
+    display: none;
+  }
+
+  header div.splash h1.small.header {
+    display: block;
+  }
+
+  body {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: $smallMobileScreen + 1px) and (max-width: $largestMobileScreen) {
+  header.ui.segment {
+    height: auto;
+
+    .a-propos {
+      height: 50vh;
+    }
+    .contact {
+      height: 40vh;
+    }
+  }
+  header div.splash h1.medium.header {
+    display: block;
+  }
+  header div.splash h1.huge.header {
+    display: none;
+  }
+
+  header div.splash h1.small.header {
+    display: none;
+  }
+
+  header div.splash-image {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: $largestMobileScreen + 1px) and (max-width: $mobileBreakpoint) {
+  header div.splash h1.medium.header {
+    display: none;
+  }
+  header div.splash h1.huge.header {
+    display: block;
+  }
+  header div.splash h1.small.header {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $mobileBreakpoint + 1px) and (max-width: $smallMonitorBreakpoint) {
+  header div.splash h1.medium.header {
+    display: none;
+  }
+  header div.splash h1.huge.header {
+    display: block;
+  }
+  header.ui.segment {
+    min-height: auto;
+  }
+
+  header.ui.segment.contact {
+    height: 50vh;
+
+    .splash-image {
+      height: 100%;
+    }
+  }
+
+  header div.splash h1.small.header {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $largeMonitorBreakpoint) {
+  header div.splash h1.medium.header {
+    display: none;
+  }
+  header div.splash h1.huge.header {
+    display: block;
+  }
+
+  header.ui.segment {
+    min-height: auto;
+    // .a-propos {
+    //   height: 60vh;
+    // }
+
+    // .contact {
+    //   height: 64vh;
+    // }
+  }
+  header div.splash h1.small.header {
+    display: none;
+  }
+
+  div.ui.image img {
+    display: inline-block;
+    width: 70%;
+  }
+}

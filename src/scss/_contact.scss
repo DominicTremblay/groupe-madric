@@ -1,0 +1,16 @@
+#contact-map {
+  height: 100% !important;
+  border: 1px solid darkgray;
+}
+
+.ui.form .inline.fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: $largestMobileScreen) {
+  .ui.form .inline.fields {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,731 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: dimgray; }
+
+main {
+  padding: 2rem; }
+
+.align.left {
+  text-align: left;
+  justify-content: flex-start; }
+
+.align.center {
+  text-align: center;
+  justify-content: center; }
+
+.ui.header {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: #464646; }
+
+.ui.orange.button {
+  border-radius: 20px;
+  border: 2px solid darkorange;
+  padding: 0.5em 1.5em 0.5em;
+  box-shadow: 3px 3px 5px silver; }
+
+.ui.orange.button .visible.content {
+  text-shadow: 2px 2px 2px sienna; }
+
+.adresse-madric .badge-list .list {
+  display: flex;
+  align-items: center; }
+
+.ui.secondary.fixed.menu a.item {
+  color: white;
+  border-radius: 10px !important;
+  transition: 0.4s ease-in-out;
+  text-shadow: 1px 1px 3px dimgray; }
+
+.ui.secondary.menu a.item:hover {
+  color: blanchedalmond;
+  text-shadow: 1px 1px 1px saddlebrown; }
+
+header.ui.segment.secondary-page-header {
+  background: linear-gradient(to top left, #ffa000, #ff6512);
+  padding: 0;
+  padding-top: 80px;
+  height: 60vh;
+  margin: -1px;
+  /* to compensate for pushable from body */ }
+
+header.ui.segment.home {
+  height: 80vh; }
+
+header.projects {
+  padding-top: 80px; }
+
+header.ui.segment.secondary-page-header {
+  background: whitesmoke; }
+
+.ui.fixed.menu {
+  color: white;
+  font-size: 1.2rem;
+  min-height: 5rem;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  z-index: 300; }
+
+.ui.ui.fixed.menu .tablet {
+  font-size: 1rem;
+  padding: 0; }
+
+.ui.ui.fixed.menu .tablet p {
+  font-size: 0.9rem; }
+
+.ui.image.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.ui.sidebar.menu {
+  background-color: gainsboro;
+  top: 5rem;
+  z-index: 200; }
+
+.swiper-container {
+  height: 96%; }
+
+header.secondary-page-header .ui.top.ui.fixed.menu {
+  background: linear-gradient(to top left, #ffa000, #ff6512);
+  box-shadow: 2px 5px 5px #aaaaaa; }
+
+.ui.top.ui.fixed.menu.nav-up {
+  background-color: chocolate;
+  transform: translateY(-100%); }
+
+.ui.top.ui.fixed.menu.nav-down.undocked {
+  background-color: darkorange;
+  box-shadow: 2px 5px 5px #aaaaaa; }
+
+.nav-down {
+  top: 0; }
+
+header div.splash {
+  height: 100%; }
+
+div.splash-image {
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center; }
+
+div.splash-image img {
+  width: 100%; }
+
+div.splash h1.ui.header {
+  margin: 0.1em;
+  align-self: center; }
+
+@media only screen and (max-width: 320px) {
+  header.ui.segment {
+    height: auto; }
+    header.ui.segment .a-propos {
+      height: 50vh; }
+    header.ui.segment .contact {
+      height: 30vh; }
+  header div.splash h1.medium.header {
+    display: none; }
+  header div.splash h1.huge.header {
+    display: none; }
+  header div.splash h1.small.header {
+    display: block; }
+  body {
+    font-size: 0.9em; } }
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  header.ui.segment {
+    height: auto; }
+    header.ui.segment .a-propos {
+      height: 50vh; }
+    header.ui.segment .contact {
+      height: 40vh; }
+  header div.splash h1.medium.header {
+    display: block; }
+  header div.splash h1.huge.header {
+    display: none; }
+  header div.splash h1.small.header {
+    display: none; }
+  header div.splash-image {
+    height: auto; } }
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  header div.splash h1.medium.header {
+    display: none; }
+  header div.splash h1.huge.header {
+    display: block; }
+  header div.splash h1.small.header {
+    display: none; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  header div.splash h1.medium.header {
+    display: none; }
+  header div.splash h1.huge.header {
+    display: block; }
+  header.ui.segment {
+    min-height: auto; }
+  header.ui.segment.contact {
+    height: 50vh; }
+    header.ui.segment.contact .splash-image {
+      height: 100%; }
+  header div.splash h1.small.header {
+    display: none; } }
+
+@media only screen and (min-width: 1201px) {
+  header div.splash h1.medium.header {
+    display: none; }
+  header div.splash h1.huge.header {
+    display: block; }
+  header.ui.segment {
+    min-height: auto; }
+  header div.splash h1.small.header {
+    display: none; }
+  div.ui.image img {
+    display: inline-block;
+    width: 70%; } }
+
+footer {
+  background-color: darkorange;
+  background: linear-gradient(to top left, #ffa000, #ff6512);
+  min-height: 20vh;
+  color: white; }
+
+footer div.ui.link.list .item {
+  color: white;
+  font-size: 0.6em; }
+
+footer div.ui.link.list a.item {
+  color: white; }
+
+footer.ui.grid div.row {
+  padding: 2em; }
+
+footer .adresse-madric h3,
+footer .adresse-madric p {
+  margin: 0.2em; }
+
+footer .adresse-madric p {
+  font-size: 0.8em; }
+
+.adresse-madric .ui.list .ui.image {
+  max-height: 70px;
+  width: auto; }
+
+@media only screen and (min-width: 970px) {
+  .adresse-madric .ui.list .item {
+    max-width: 120px; } }
+
+@media only screen and (min-width: 969px) and (max-width: 1075px) {
+  .adresse-madric .ui.list .item {
+    max-width: 100px; }
+  .adresse-madric .badge-list {
+    text-align: center; } }
+
+@media only screen and (max-width: 968px) {
+  .adresse-madric .ui.list .item {
+    max-width: 70px; }
+  .adresse-madric .badge-list {
+    text-align: center; } }
+
+.swiper-container {
+  width: 100%;
+  padding: 1rem; }
+
+header.ui.raised.segment.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ff6512, #ffae00);
+  background-image: url("../images/madric_cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  header.ui.raised.segment.home h1 {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 2em;
+    width: 40%;
+    line-height: 1.2em;
+    text-align: center; }
+    header.ui.raised.segment.home h1 span.groupe {
+      display: flex;
+      justify-content: center;
+      color: whitesmoke;
+      font-size: 2em;
+      line-height: 1em; }
+
+a.ui.huge.blue.animated.splash.button {
+  box-shadow: 3px 3px 3px sienna; }
+
+img.agrandir-maison {
+  box-shadow: 8px 7px 10px #888;
+  margin-top: -5em; }
+
+div.top-content {
+  text-align: left; }
+  div.top-content h2 {
+    font-size: 2em; }
+
+img.groupe-madric {
+  box-shadow: 8px 7px 10px #888; }
+
+.agrandir div.ui.large.image {
+  margin-bottom: 1em; }
+
+section.realisations.ui.raised.segment {
+  background-color: whitesmoke;
+  background-image: url("../images/36.png");
+  padding: 2em;
+  align-items: center; }
+  section.realisations.ui.raised.segment h3 {
+    font-size: 1.8em; }
+  section.realisations.ui.raised.segment .realisations-button {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 1em; }
+
+.ui.stackable.container .ui.list {
+  margin: 1em 0; }
+
+div.ui.raised.card.realisations {
+  width: 100%;
+  padding: 1em; }
+
+.realisation-item.ui.image {
+  padding: 1em 0;
+  border-radius: 0.5em; }
+
+.realisation-item {
+  margin: 0.5em 0; }
+
+.second.column {
+  padding-top: 5em; }
+
+.hidden.content {
+  max-width: 80%; }
+
+.citation {
+  font-style: italic;
+  border-left: 3px solid dodgerblue;
+  padding-left: 0.8em; }
+
+.citation-names {
+  font-weight: bold;
+  text-align: right; }
+
+@media only screen and (min-width: 1201px) {
+  .ui.stackable.container .ui.list {
+    margin: 1em 0;
+    line-height: 5em; }
+  section.realisations.ui.raised.segment .column.first {
+    font-size: 1.2em; }
+    section.realisations.ui.raised.segment .column.first .ui.grid.projects {
+      margin: 0.5em; }
+      section.realisations.ui.raised.segment .column.first .ui.grid.projects p {
+        padding: 0; } }
+
+section.agrandissement-garage h2.ui.header,
+section.construire-garage h2.ui.header {
+  margin-top: 1em; }
+
+div.splash.ajout-piece div.splash-image,
+div.splash.construire-garage div.splash-image {
+  background-image: url("../images/ajout-garage.png");
+  background-position: top;
+  background-size: cover;
+  margin-top: -0.3em;
+  background-repeat: no-repeat;
+  height: 101%; }
+
+div.splash.ajout-piece h1.header,
+div.splash.construire-garage h1.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5em;
+  border-radius: 0.1em;
+  font-size: 2.5em;
+  border: 0.3em solid rgba(255, 255, 255, 0.2); }
+
+section.construire-garage div.first.row p {
+  margin-top: 2.5em; }
+
+section.construire-garage div.ui.segment {
+  margin-top: 2em;
+  background-color: whitesmoke;
+  background-image: url("../images/36.png"); }
+
+section.construire-garage .ui.image {
+  box-shadow: 5px 5px 5px dimgray; }
+
+div.benefits-section.ui.grid {
+  margin: 1em; }
+
+div.benefits.ui.segment {
+  border-color: darkorange;
+  font-size: 1.2em;
+  background-image: url("../images/36.png"); }
+
+div.benefits-section .ui.container {
+  padding: 0.5em; }
+
+section.ajout-avantages .ui.segment,
+section.pourquoi-madric .ui.segment {
+  background-color: bisque;
+  border: 1px solid darkorange;
+  background-image: url("../images/36.png");
+  padding: 2em;
+  margin-top: 2em; }
+
+section.suite-parentale {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center; }
+  section.suite-parentale div.suite-parentale-content {
+    flex-basis: 55%; }
+  section.suite-parentale div.suite-parentale-img {
+    flex-basis: 45%;
+    z-index: -1; }
+
+section.salle-familiale {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center; }
+  section.salle-familiale div.salle-familiale-content {
+    flex-basis: 55%; }
+  section.salle-familiale div.salle-familiale-img {
+    flex-basis: 45%;
+    z-index: -1;
+    margin-right: 1em; }
+
+section.autres {
+  margin-top: 2rem; }
+
+.ajout-piece img {
+  box-shadow: 5px 5px 15px dimgray; }
+
+@media only screen and (max-width: 320px) {
+  div.benefits-section.ui.grid {
+    margin: 0; } }
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  div.benefits-section.ui.grid {
+    margin: 0; }
+  div.benefits.ui.segment.eight.wide.column {
+    font-size: 1em;
+    padding: 0; } }
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  div.benefits-section.ui.grid {
+    margin: 0; }
+  div.benefits.ui.segment.eight.wide.column {
+    font-size: 1em;
+    padding: 0; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  div.benefits-section.ui.grid {
+    margin: 0; }
+  div.benefits.ui.segment.eight.wide.column {
+    font-size: 1em;
+    padding: 0; } }
+
+div.ui.image.splash-image.a-propos {
+  background-image: url("../images/groupe-madric.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 101%;
+  margin-top: -0.3em; }
+  div.ui.image.splash-image.a-propos h1.header {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    border-radius: 0.1em;
+    font-size: 2.5em;
+    border: 0.3em solid rgba(255, 255, 255, 0.2); }
+
+.splash.a-propos h1 {
+  font-weight: 900;
+  margin: 0.5em 0 !important; }
+
+section.a-propos {
+  margin-top: 1em; }
+  section.a-propos h3 {
+    font-size: 1.4em; }
+  section.a-propos h4 {
+    font-size: 1.2em; }
+  section.a-propos .ui.raised.segment {
+    background-color: whitesmoke;
+    background-image: url("../images/36.png"); }
+
+div.ui.icon.message.review {
+  font-size: 0.8em; }
+
+@media only screen and (max-width: 767px) {
+  div.ui.icon.message.review .icon:not(.close) {
+    display: none; }
+  div.ui.icon.message.review blockquote {
+    margin: 0.5em; }
+  div.splash-image.a-propos {
+    height: 90%; } }
+
+#contact-map {
+  height: 100% !important;
+  border: 1px solid darkgray; }
+
+.ui.form .inline.fields {
+  display: flex;
+  justify-content: space-between; }
+
+@media only screen and (max-width: 768px) {
+  .ui.form .inline.fields {
+    flex-direction: column;
+    align-items: flex-start; } }
+
+.ui.secondary.pointing.project.menu {
+  justify-content: center;
+  font-size: 0.9em; }
+
+.ui.secondary.pointing.project.menu a:hover {
+  color: dodgerblue;
+  text-shadow: 1px 1px 1px darkgrey; }
+
+div.ui.project.container {
+  background-color: whitesmoke;
+  border-radius: 0.3em;
+  background-image: url("../images/36.png"); }
+
+.ui.cards .card .location {
+  font-size: 0.8em;
+  font-style: italic; }
+
+.ui.special.cards {
+  justify-content: center;
+  margin-bottom: 0; }
+
+.autres-projets .ui.raised.special.cards .card {
+  max-width: 16em; }
+
+div.splash.projets {
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: content;
+  background-color: rgba(133, 133, 133, 0.5);
+  background-image: url("../images/blueprint.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -1em;
+  background-position: top; }
+
+div.splash.projets h1 {
+  border: 3px solid whitesmoke;
+  padding: 0.5em;
+  color: whitesmoke;
+  text-align: center; }
+
+div.ui.breadcrumb {
+  margin-left: 3em; }
+
+div.swiper-container.project-item {
+  padding: 0; }
+
+div.swiper-container.project-item .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 98%; }
+
+.swiper-slide h3 {
+  margin: 0 0 0.5em 0; }
+
+div.ui.stackable.grid div.projets-similaires {
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0 0 !important; }
+
+.other-projects-container {
+  box-shadow: 5px 5px 5px gainsboro;
+  border: 1px solid silver;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  width: 100%; }
+
+div.projets-similaires h3 {
+  font-size: 2em;
+  font-variant: small-caps;
+  font-weight: bolder;
+  margin: 0; }
+
+.ui.stackable.grid div.center.aligned.row.autres-projets {
+  justify-content: center;
+  background-color: #f0f0f0;
+  background-image: url("../images/36.png");
+  margin: 0;
+  padding-top: 1em;
+  border-radius: 5px; }
+
+a.ui.blue.button {
+  box-shadow: 2px 2px 3px silver; }
+
+.grid div.row.arrow-buttons {
+  display: flex;
+  justify-content: space-between; }
+
+.ui.grid .project-slider .column.left-side {
+  padding: 0.5em; }
+
+div.project-item-contact {
+  display: flex;
+  justify-content: center;
+  padding: 1em; }
+  div.project-item-contact .contact-button {
+    display: flex;
+    justify-content: center; }
+
+@media only screen and (min-width: 1201px) {
+  div.project-slider {
+    height: 78vh; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  div.project-slider {
+    height: auto;
+    font-size: 0.9em; }
+  .autres-projets .ui.raised.special.cards .card {
+    max-width: 12em;
+    border: 1px solid darkgray; } }
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  div.project-slider {
+    height: auto;
+    font-size: 0.8em; }
+  div.project-slider h1 {
+    font-size: 1.8em; }
+  div.project-slider h2 {
+    font-size: 1.4em;
+    margin: 0.5em 0; } }
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+  div.project-slider {
+    height: auto;
+    font-size: 0.8em; }
+  div.splash.projets {
+    height: 7em; }
+  div.splash.projets h1.ui.header {
+    margin: 1em; }
+  div.ui.breadcrumb {
+    font-size: 0.6em; }
+  div.project-slider h1 {
+    font-size: 1.8em; }
+  div.project-slider h2 {
+    font-size: 1.4em;
+    margin: 0.5em 0; }
+  .grid div.row.arrow-buttons .ui.button {
+    max-width: 10em; } }
+
+@media only screen and (max-width: 320px) {
+  div.project-slider {
+    height: auto;
+    font-size: 1em; }
+  div.splash.projets {
+    height: 7em; }
+  div.splash.projets h1.ui.small.header {
+    margin: 0.5em;
+    font-size: 1.3em; }
+  div.ui.breadcrumb {
+    font-size: 0.7em; }
+  .grid div.row.arrow-buttons .ui.button {
+    max-width: 9em;
+    font-size: 0.7em; }
+  div.project-slider h1 {
+    font-size: 1.8em; }
+  div.project-slider h2 {
+    font-size: 1.4em;
+    margin: 0.5em 0; }
+  .autres-projets .ui.raised.special.cards .card {
+    max-width: 20em;
+    border: 1px solid darkgray; } }
+
+div.splash.ajout-etage div.splash-image {
+  background-image: url("../images/ajout-etage.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: -0.3em;
+  height: 101%; }
+
+div.splash.ajout-etage h1.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5em;
+  border-radius: 0.1em;
+  font-size: 2.5em;
+  border: 0.3em solid rgba(255, 255, 255, 0.2); }
+
+div.first.row p {
+  margin-top: 2em; }
+
+div.ui.raised.segment.ajout-etage {
+  background-color: whitesmoke;
+  background-image: url(../images/36.png); }
+
+section.ajout-etage p:first-child {
+  margin-top: 2em; }
+
+div.splash.extension-maison div.splash-image {
+  height: 101%;
+  justify-content: flex-start;
+  background-image: url("../images/extension-maison.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: -0.4em; }
+  div.splash.extension-maison div.splash-image h1.header {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    border-radius: 0.1em;
+    font-size: 2.5em;
+    border: 0.3em solid rgba(255, 255, 255, 0.2); }
+
+div.splash.moderniser-maison div.splash-image {
+  height: 101%;
+  justify-content: flex-start;
+  background-image: url("../images/moderniser-maison.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: -0.4em; }
+  div.splash.moderniser-maison div.splash-image h1.header {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    border-radius: 0.1em;
+    font-size: 2.5em;
+    border: 0.3em solid rgba(255, 255, 255, 0.2); }
+
+div.splash.reamenagement-bureau div.splash-image {
+  height: 101%;
+  margin-top: -0.4em;
+  justify-content: flex-start;
+  background-image: url("../images/architects-working-on-blueprints-GLP5QRU.jpg");
+  background-size: cover;
+  background-position: center; }
+  div.splash.reamenagement-bureau div.splash-image h1.header {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    border-radius: 0.1em;
+    font-size: 2.5em;
+    border: 0.3em solid rgba(255, 255, 255, 0.2); }
+
+div.ui.segment.call-madric {
+  z-index: auto;
+  border: 1px solid dodgerblue; }
+
+div.ui.segment.call-madric::before {
+  z-index: -2; }
+
+div.ui.segment.call-madric::after {
+  z-index: -1; }
+
+.scroll-animations.animated {
+  visibility: hidden; }
