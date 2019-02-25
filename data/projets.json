@@ -1,0 +1,146 @@
+[
+  {
+    "client": "Anik Léonard",
+    "ville": "Saint-Basile",
+    "regions": "Rive-Sud de Montréal",
+    "titre":"Ajout d'une pièce au dessus du garage",
+    "sousTitre": "Projet réalisé à Saint-Basile sur la Rive-Sud de Montréal",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+    "type":"Projets extérieurs",
+    "images":{
+      "avant": [
+        {
+          "src":"../build/images/projets/projets_exterieur/Anik Léonard st-basile/0Avant.jpg",
+          "titre": "Avant: un garage simple"
+        }
+      ],
+      "pendant": [],
+      "apres": [
+        {
+          "src":"../build/images/projets/projets_exterieur/Anik Léonard st-basile/apres (01).JPG",
+          "titre":"Après: ajout d'une pièce au dessus du garage"
+        }
+      ]
+    }
+  },
+  {
+    "client": "Carl Tremblay",
+    "ville": "",
+    "regions": "Rive-Sud de Montréal",
+    "titre":"Ajout d'une extension arrière",
+    "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+    "type":"Projets extérieurs",
+    "images":{
+      "avant": [
+        {
+          "src":"../build/images/projets/projets_exterieur/carl_tremblay/0avant (01).JPG",
+          "titre": "Avant: façade arrière extérieure (1)"
+        },
+        {
+          "src":"../build/images/projets/projets_exterieur/carl_tremblay/0avant.JPG",
+          "titre": "Avant: façade arrière extérieure (2)"
+        }
+      ],
+      "pendant": [
+        {
+          "src": "../build/images/projets/projets_exterieur/carl_tremblay/IMG_3458.JPG",
+          "titre": "Pendant: construction d'une extension arrière"
+        }
+      ],
+      "apres": [
+        {
+          "src":"../build/images/projets/projets_exterieur/carl_tremblay/apres (01).JPG",
+          "titre":"Après: ajout d'une extension arrière (1)"
+        },
+        {
+          "src":"../build/images/projets/projets_exterieur/carl_tremblay/apres (03).JPG",
+          "titre":"Après: ajout d'une extension arrière (2)"
+        },
+        {
+          "src":"../build/images/projets/projets_exterieur/carl_tremblay/apres (04).JPG",
+          "titre":"Après: ajout d'une extension arrière (3)"
+        },
+        {
+          "src":"../build/images/projets/projets_exterieur/carl_tremblay/apres (7).JPG",
+          "titre":"Après: ajout d'une extension arrière (4)"
+        }
+      ]
+    }
+  },
+  {
+    "client": "Alexandre Lacroix",
+    "ville": "",
+    "regions": "Rive-Sud de Montréal",
+    "titre":"Ajout d'une pièce au 2è étage",
+    "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+    "type":"Projets extérieurs",
+    "images":{
+      "avant": [
+        {
+          "src":"../build/images/projets/projets_exterieur/alexandre_lacroix/avant (3).JPG",
+          "titre": "Avant: avant l'ajout d'un 2è étage"
+        }
+      ],
+      "pendant": [
+        {
+          "src":"../build/images/projets/projets_exterieur/alexandre_lacroix/pendant (1).JPG",
+          "titre":"Pendant: constructon du 2è étage"
+        }
+      ],
+      "apres": [
+      ]
+    }
+  },
+  {
+    "client": "Allard Lefebvre",
+    "ville": "St-Blaise-sur-Richelieu",
+    "regions": "Montérégie",
+    "titre":"Lorem ipsum dolor, sit amet consectetur.",
+    "sousTitre": "Projet réalisé à St-Blaise-sur-Richelieu en montérégie",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+    "type":"Projets extérieurs",
+    "images":{
+      "avant": [
+        {
+          "src":"../build/images/projets/projets_exterieur/allard_lefebvre/avant (18).JPG",
+          "titre": "Avant: lorem ipsum dolor"
+        }
+      ],
+      "pendant": [
+        {
+          "src":"../build/images/projets/projets_exterieur/allard_lefebvre/pendant (5).JPG",
+          "titre":"Pendant: lorem ipsum dolor"
+        }
+      ],
+      "apres": []
+      }
+    },
+    {
+      "client": "Anne-Marie Couturier",
+      "ville": "Saint-Basile",
+      "regions": "Montérégie",
+      "titre":"Ajout d'une pièce au dessus du garage",
+      "sousTitre": "Projet réalisé à Saint-Basile en montérégie",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+      "type":"Projets extérieurs",
+      "images":{
+        "avant": [
+          {
+            "src":"../build/images/projets/projets_exterieur/anne_marie_couturier/0avant.jpg",
+            "titre": "Avant: lorem ipsum dolor"
+          }
+        ],
+        "pendant": [],
+        "apres": [         
+          {
+            "src":"../build/images/projets/projets_exterieur/anne_marie_couturier/apres (01).JPG",
+            "titre":"Après: ajout d'pièce au dessus du garage"
+          }
+        ]
+      }
+  }
+
+
+]

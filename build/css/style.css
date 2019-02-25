@@ -496,13 +496,16 @@ div.ui.project.container {
   border-radius: 0.3em;
   background-image: url("../images/36.png"); }
 
+div.project-reviews {
+  margin: 2em; }
+
 .ui.cards .card .location {
   font-size: 0.8em;
   font-style: italic; }
 
 .ui.special.cards {
   justify-content: center;
-  margin-bottom: 0; }
+  margin-bottom: 2em; }
 
 .autres-projets .ui.raised.special.cards .card {
   max-width: 16em; }
@@ -533,13 +536,25 @@ div.swiper-container.project-item {
 
 div.swiper-container.project-item .swiper-slide {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 98%; }
-
-.swiper-slide h3 {
-  margin: 0 0 0.5em 0; }
+  div.swiper-container.project-item .swiper-slide aside {
+    position: absolute;
+    top: 38px;
+    left: 2px;
+    z-index: 10;
+    padding: 0.5em;
+    color: white;
+    background-color: rgba(255, 140, 0, 0.8);
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 3px 4px #240f01; }
+  div.swiper-container.project-item .swiper-slide .ui.image {
+    position: absolute;
+    top: 38px;
+    left: 2px; }
 
 div.ui.stackable.grid div.projets-similaires {
   height: 5em;

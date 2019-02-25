@@ -22,6 +22,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
   <script src="../dist/semantic.min.js"></script>
   <script src="../build/js/main.js"></script>
+  <script src="../build/js/reviews.js"></script>
+  <script src="../build/js/projets.js"></script>
 
   <title>Le Groupe Madric Inc.</title>
 
@@ -35,7 +37,10 @@
         $('.ui.sidebar')
           .sidebar('setting', 'transition', 'overlay')
           .sidebar('attach events', '.toc.item');
-          
+        
+          $('.special.cards .image').dimmer({
+            on: 'hover'
+          });
 
       }); // document ready
   </script>
@@ -140,25 +145,16 @@
           <!-- Slides wrapper -->
           <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <h3>Avant avec un simple garage</h3>
-                <img class="ui bordered big image" src="../build/images/projets/projets_exterieur/Anik Léonard st-basile/0Avant.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                  <h3>Après l'ajout d'une pièce au dessus du garage</h3>
-                <img class="ui bordered big image" src="../build/images/projets/projets_exterieur/Anik Léonard st-basile/apres (01).JPG" alt=""></div>
-            
+             
           </div>
           <!-- Pagination, if required -->
           <div class="swiper-pagination"></div>
       </div>
           </div>
-          <div class="column">
-            <h1>Ajout d'une pièce au dessus du garage</h1>
-            <h2>Projet réalisé à Saint-Basile sur la Rive-Sud de Montréal</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.</p>
+          <div class="column details-projet">
+            <div class="description-projet">
 
+            </div>
             
 
             <div class="center aligned row">
@@ -190,6 +186,7 @@
                   </a>
                 <!-- </div> -->
 
+
           <!-- </div> -->
           <!-- <div class="right aligned column"> -->
             <a class="ui blue right labeled icon button">
@@ -204,102 +201,24 @@
         </div>
         <div class="center aligned row autres-projets">
           <div class="ui raised special cards">
+                    <div class="project-reviews">
 
-            <div class="card">
-                <div class="blurring dimmable image">
-                  <div class="ui dimmer">
-                    <div class="content">
-                      <div class="center">
-                        <div class="ui inverted button" data-projet="1">Voir le projet</div>
-                      </div>
+                      <h3>Ce qu'en disent nos clients</h3>
+            
+                      
                     </div>
-                  </div>
-                  <img src="../build/images/projets/projets_exterieur/Anik Léonard st-basile/apres (01).JPG" alt="Anik Leonard Apres">
-                </div>
-                <div class="content">
-                  <div class="header">
-                      Ajout d'un étage au dessus du garage
-                    <div class="meta">
-                      <span class="location">
-                      Anik Léonard, Saint-Basile
-                    </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="card">
-                  <div class="blurring dimmable image">
-                    <div class="ui dimmer">
-                      <div class="content">
-                        <div class="center">
-                          <div class="ui inverted button" data-projet="1">Voir le projet</div>
-                        </div>
-                      </div>
-                    </div>
-                    <img src="../build/images/projets/projets_exterieur/Anik Léonard st-basile/apres (01).JPG" alt="Anik Leonard Apres">
-                  </div>
-                  <div class="content">
-                    <div class="header">
-                        Ajout d'un étage au dessus du garage
-                      <div class="meta">
-                        <span class="location">
-                        Anik Léonard, Saint-Basile
-                      </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="card">
-                    <div class="blurring dimmable image">
-                      <div class="ui dimmer">
-                        <div class="content">
-                          <div class="center">
-                            <div class="ui inverted button" data-projet="1">Voir le projet</div>
-                          </div>
-                        </div>
-                      </div>
-                      <img src="../build/images/projets/projets_exterieur/Anik Léonard st-basile/apres (01).JPG" alt="Anik Leonard Apres">
-                    </div>
-                    <div class="content">
-                      <div class="header">
-                          Ajout d'un étage au dessus du garage
-                        <div class="meta">
-                          <span class="location">
-                          Anik Léonard, Saint-Basile
-                        </span>
-                        </div>
-                      </div>
-                    </div>
                   </div>
 
-                  <div class="card">
-                      <div class="blurring dimmable image">
-                        <div class="ui dimmer">
-                          <div class="content">
-                            <div class="center">
-                              <div class="ui inverted button" data-projet="1">Voir le projet</div>
-                            </div>
-                          </div>
-                        </div>
-                        <img src="../build/images/projets/projets_exterieur/Anik Léonard st-basile/apres (01).JPG" alt="Anik Leonard Apres">
-                      </div>
-                      <div class="content">
-                        <div class="header">
-                            Ajout d'un étage au dessus du garage
-                          <div class="meta">
-                            <span class="location">
-                            Anik Léonard, Saint-Basile
-                          </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
 
-                    
+      </div>
+      </div>
+      <div class="reviews-container">
+        <div class="rows reviews">
 
-          </div>
+          
+
         </div>
       </div>
       </div>

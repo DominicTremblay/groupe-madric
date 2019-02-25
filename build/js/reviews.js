@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var allReviews = [];
 
-  function reviewsList(url, cb) {
+  function readJsonFile(url, cb) {
     $.getJSON(url)
     .done(function(data) {
       cb(data)
@@ -99,10 +99,25 @@ $(document).ready(function(){
     }
   }
 
-  reviewsList('./build/js/reviews.json', addReviews);
+  function pickReview(data) {
+    var randomIndex = Math.floor(Math.random() * data.length);
+    $('.project-reviews').append(createReview(data[randomIndex]));
+
+  }
 
 
-  
+
+  if ($('.temoignages-client').length !== 0) {
+    console.log("Reviews A propos")
+    readJsonFile('./build/js/reviews.json', addReviews);
+  }
+
+  if ($('.project-reviews').length !== 0) {
+    console.log("Reviews Projet")
+
+    readJsonFile('../build/js/reviews.json', pickReview)
+  }
+
   $('.temoignages-clients')
   .visibility({
     once: false,
