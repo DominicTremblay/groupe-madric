@@ -1,6 +1,6 @@
   // Read the data of the projects from the json file
   function readJsonFile(url, cb) {
-    $.getJSON(url)
+    $.ajax(url)
     .done(function(data) {
       cb(data)
     })
