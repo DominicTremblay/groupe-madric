@@ -170,7 +170,7 @@ $(document).ready(function(){
   }
 
 
-  readJsonFile('../../data/projets.json', selectPageView());
+  readJsonFile('../data/projets.json', selectPageView());
 
 
 }); // document ready
