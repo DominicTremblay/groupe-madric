@@ -141,7 +141,7 @@ $(document).ready(function(){
       .removeClass('hidden')
       .addClass('transition')
       .addClass('active')
-      .addClass(visible);
+      .addClass('visible');
   })
 
   $('.ui.raised.special.cards').on('mouseleave', '.card', function(e) {
@@ -170,7 +170,8 @@ $(document).ready(function(){
   }
 
 
-  readJsonFile('https://dominictremblay.github.io/groupe-madric/data/projets.json', selectPageView());
+  readJsonFile('../data/projets.json', selectPageView());
+  // readJsonFile('https://dominictremblay.github.io/groupe-madric/data/projets.json', selectPageView());
 
 
 }); // document ready

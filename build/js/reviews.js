@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var allReviews = [];
 
-  function readJsonFile(url, cb) {
+  function reviewsList(url, cb) {
     $.getJSON(url)
     .done(function(data) {
       cb(data)
@@ -86,7 +86,7 @@ $(document).ready(function(){
   }
 
   function addReviews(data) {
-    allReviews = array_chunks(data, 3);
+    allReviews = array_chunks(data, 4);
     window.readReviews = getReviewSlice(allReviews);
   }
 
@@ -99,25 +99,27 @@ $(document).ready(function(){
     }
   }
 
+  // Select a random quote and add its to a project page
   function pickReview(data) {
     var randomIndex = Math.floor(Math.random() * data.length);
     $('.project-reviews').append(createReview(data[randomIndex]));
-
   }
 
-
-
-  if ($('.temoignages-client').length !== 0) {
-    console.log("Reviews A propos")
-    readJsonFile('./build/js/reviews.json', addReviews);
-  }
-
+  // Adds a random review at bottom of a single project page
   if ($('.project-reviews').length !== 0) {
     console.log("Reviews Projet")
 
-    readJsonFile('../build/js/reviews.json', pickReview)
+    reviewsList('../build/js/reviews.json', pickReview)
   }
 
+  // Adds reviews list at bottom of about page
+  if ($('.temoignages-clients').length !== 0) {
+    reviewsList('./build/js/reviews.json', addReviews);
+  }
+
+
+
+  
   $('.temoignages-clients')
   .visibility({
     once: false,

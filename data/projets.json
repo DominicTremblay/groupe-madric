@@ -79,13 +79,13 @@
     "images":{
       "avant": [
         {
-          "src":"../build/images/projets/projets_exterieurs/alexandre_lacroix/avant (3).JPG",
+          "src":"../build/images/projets/projets_exterieurs/alexandre_lacroix/avant-3.jpg",
           "titre": "Avant: avant l'ajout d'un 2è étage"
         }
       ],
       "pendant": [
         {
-          "src":"../build/images/projets/projets_exterieurs/alexandre_lacroix/pendant (1).JPG",
+          "src":"../build/images/projets/projets_exterieurs/alexandre_lacroix/pendant-1.jpg",
           "titre":"Pendant: constructon du 2è étage"
         }
       ],
