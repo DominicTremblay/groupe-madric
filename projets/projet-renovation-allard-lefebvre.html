@@ -23,6 +23,7 @@
   <script src="../dist/semantic.min.js"></script>
   <script src="../build/js/main.js"></script>
   <script src="../build/js/reviews.js"></script>
+  <script src="../build/js/helpers.js"></script>
   <script src="../build/js/projets.js"></script>
 
   <title>Le Groupe Madric Inc. | Projet de rénovation: Allard Lefebvre</title>
@@ -134,7 +135,7 @@
       </div>
     </header>
 
-    <main>
+    <main data-view="projet">
 
       <div class="ui stackable equal width grid">
         <div class="ui image row project-slider">
@@ -180,7 +181,7 @@
           <!-- <div class="left aligned column"> -->
 
               <!-- <div class="right aligned column"> -->
-                  <a class="ui blue left labeled icon button">
+                  <a class="ui blue left labeled icon button previous-project">
                     <i class="left arrow icon"></i>
                     Projet précédent
                   </a>
@@ -189,7 +190,7 @@
 
           <!-- </div> -->
           <!-- <div class="right aligned column"> -->
-            <a class="ui blue right labeled icon button">
+            <a class="ui blue right labeled icon button next-project">
               <i class="right arrow icon"></i>
               Projet suivant
             </a>
@@ -200,17 +201,22 @@
           <h3>Autres projets</h3>
         </div>
         <div class="center aligned row autres-projets">
+            <div class="other-projects-back">
+                <i class="left chevron icon"></i>
+            </div>          
+
           <div class="ui raised special cards">
-            
-                    <div class="project-reviews">
 
-                      <h3>Ce qu'en disent nos clients</h3>
-            
-                      
-                    </div>
+            <div class="project-reviews">
+              <h3>Ce qu'en disent nos clients</h3>
+            </div>
 
 
-                  </div>
+          </div>
+
+          <div class="other-projects-next">
+              <i class="right chevron icon"></i>
+          </div>
 
 
       </div>

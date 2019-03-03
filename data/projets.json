@@ -6,18 +6,18 @@
     "titre":"Ajout d'une pièce au dessus du garage",
     "sousTitre": "Projet réalisé à Saint-Basile sur la Rive-Sud de Montréal",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
-    "type":"Projets extérieurs",
+    "type":"Projets exterieurs",
     "images":{
       "avant": [
         {
-          "src":"../build/images/projets/projets_exterieur/Anik Léonard st-basile/0Avant.jpg",
+          "src":"../build/images/projets/projets_exterieurs/Anik Léonard st-basile/0Avant.jpg",
           "titre": "Avant: un garage simple"
         }
       ],
       "pendant": [],
       "apres": [
         {
-          "src":"../build/images/projets/projets_exterieur/Anik Léonard st-basile/apres (01).JPG",
+          "src":"../build/images/projets/projets_exterieurs/Anik Léonard st-basile/apres (01).JPG",
           "titre":"Après: ajout d'une pièce au dessus du garage"
         }
       ]
@@ -30,39 +30,39 @@
     "titre":"Ajout d'une extension arrière",
     "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
-    "type":"Projets extérieurs",
+    "type":"Projets exterieurs",
     "images":{
       "avant": [
         {
-          "src":"../build/images/projets/projets_exterieur/carl_tremblay/0avant (01).JPG",
+          "src":"../build/images/projets/projets_exterieurs/carl_tremblay/0avant (01).JPG",
           "titre": "Avant: façade arrière extérieure (1)"
         },
         {
-          "src":"../build/images/projets/projets_exterieur/carl_tremblay/0avant.JPG",
+          "src":"../build/images/projets/projets_exterieurs/carl_tremblay/0avant.JPG",
           "titre": "Avant: façade arrière extérieure (2)"
         }
       ],
       "pendant": [
         {
-          "src": "../build/images/projets/projets_exterieur/carl_tremblay/IMG_3458.JPG",
+          "src": "../build/images/projets/projets_exterieurs/carl_tremblay/IMG_3458.JPG",
           "titre": "Pendant: construction d'une extension arrière"
         }
       ],
       "apres": [
         {
-          "src":"../build/images/projets/projets_exterieur/carl_tremblay/apres (01).JPG",
+          "src":"../build/images/projets/projets_exterieurs/carl_tremblay/apres (01).JPG",
           "titre":"Après: ajout d'une extension arrière (1)"
         },
         {
-          "src":"../build/images/projets/projets_exterieur/carl_tremblay/apres (03).JPG",
+          "src":"../build/images/projets/projets_exterieurs/carl_tremblay/apres (03).JPG",
           "titre":"Après: ajout d'une extension arrière (2)"
         },
         {
-          "src":"../build/images/projets/projets_exterieur/carl_tremblay/apres (04).JPG",
+          "src":"../build/images/projets/projets_exterieurs/carl_tremblay/apres (04).JPG",
           "titre":"Après: ajout d'une extension arrière (3)"
         },
         {
-          "src":"../build/images/projets/projets_exterieur/carl_tremblay/apres (7).JPG",
+          "src":"../build/images/projets/projets_exterieurs/carl_tremblay/apres (7).JPG",
           "titre":"Après: ajout d'une extension arrière (4)"
         }
       ]
@@ -75,17 +75,17 @@
     "titre":"Ajout d'une pièce au 2è étage",
     "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
-    "type":"Projets extérieurs",
+    "type":"Projets exterieurs",
     "images":{
       "avant": [
         {
-          "src":"../build/images/projets/projets_exterieur/alexandre_lacroix/avant (3).JPG",
+          "src":"../build/images/projets/projets_exterieurs/alexandre_lacroix/avant (3).JPG",
           "titre": "Avant: avant l'ajout d'un 2è étage"
         }
       ],
       "pendant": [
         {
-          "src":"../build/images/projets/projets_exterieur/alexandre_lacroix/pendant (1).JPG",
+          "src":"../build/images/projets/projets_exterieurs/alexandre_lacroix/pendant (1).JPG",
           "titre":"Pendant: constructon du 2è étage"
         }
       ],
@@ -100,17 +100,17 @@
     "titre":"Lorem ipsum dolor, sit amet consectetur.",
     "sousTitre": "Projet réalisé à St-Blaise-sur-Richelieu en montérégie",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
-    "type":"Projets extérieurs",
+    "type":"Projets exterieurs",
     "images":{
       "avant": [
         {
-          "src":"../build/images/projets/projets_exterieur/allard_lefebvre/avant (18).JPG",
+          "src":"../build/images/projets/projets_exterieurs/allard_lefebvre/avant (18).JPG",
           "titre": "Avant: lorem ipsum dolor"
         }
       ],
       "pendant": [
         {
-          "src":"../build/images/projets/projets_exterieur/allard_lefebvre/pendant (5).JPG",
+          "src":"../build/images/projets/projets_exterieurs/allard_lefebvre/pendant (5).JPG",
           "titre":"Pendant: lorem ipsum dolor"
         }
       ],
@@ -124,23 +124,248 @@
       "titre":"Ajout d'une pièce au dessus du garage",
       "sousTitre": "Projet réalisé à Saint-Basile en montérégie",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
-      "type":"Projets extérieurs",
+      "type":"Projets exterieurs",
       "images":{
         "avant": [
           {
-            "src":"../build/images/projets/projets_exterieur/anne_marie_couturier/0avant.jpg",
+            "src":"../build/images/projets/projets_exterieurs/anne_marie_couturier/0avant.jpg",
             "titre": "Avant: lorem ipsum dolor"
           }
         ],
         "pendant": [],
         "apres": [         
           {
-            "src":"../build/images/projets/projets_exterieur/anne_marie_couturier/apres (01).JPG",
+            "src":"../build/images/projets/projets_exterieurs/anne_marie_couturier/apres (01).JPG",
             "titre":"Après: ajout d'pièce au dessus du garage"
           }
         ]
       }
+  },
+  {
+    "client": "Belisle Belanger",
+    "ville": "Saint-Basile",
+    "regions": "Montérégie",
+    "titre":"Ajout d'un deuxième étage",
+    "sousTitre": "Projet réalisé à Saint-Basile en montérégie",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+    "type":"Projets exterieurs",
+    "images":{
+      "avant": [
+        {
+          "src":"../build/images/projets/projets_exterieurs/belisle_belanger/0avant.jpg",
+          "titre": "Avant: l'ajout d'un deuxième étage"
+        }
+      ],
+      "pendant": [
+        {
+          "src":"../build/images/projets/projets_exterieurs/belisle_belanger/pendant (3).JPG",
+          "titre":"Pendant l'ajout d'un deuxième étage"
+        }
+      ],
+      "apres": [         
+        {
+          "src":"../build/images/projets/projets_exterieurs/belisle_belanger/apres (01).JPG",
+          "titre":"Après: ajout d'un deuxième étage"
+        }
+      ]
+    }
+},
+{
+  "client": "Boire Albert",
+  "ville": "Iberville",
+  "regions": "Montérégie",
+  "titre":"Ajout d'une extension arrière",
+  "sousTitre": "Projet réalisé à Iberville en montérégie",
+  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+  "type":"Projets exterieurs",
+  "images":{
+    "avant": [
+      {
+        "src":"../build/images/projets/projets_exterieurs/boire_albert/0avant.jpg",
+        "titre": "Avant: l'ajout d'une extension arrière"
+      }
+    ],
+    "pendant": [],
+    "apres": [         
+      {
+        "src":"../build/images/projets/projets_exterieurs/boire_albert/apres (01).JPG",
+        "titre":"Après: l'ajout d'une extension arrière"
+      },
+      {
+        "src":"../build/images/projets/projets_exterieurs/boire_albert/apres (1).JPG",
+        "titre":"Après: nouveau garage indépendant"
+      }
+    ]
   }
-
+},
+{
+  "client": "Martin Juneau",
+  "ville": "",
+  "regions": "Rive-Sud de Montréal",
+  "titre":"Rénovation intérieur",
+  "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
+  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+  "type":"Projets interieurs",
+  "images":{
+    "avant": [
+      {
+        "src":"../build/images/projets/projets_interieurs/martin_juneau/0Avant 01.jpg",
+        "titre": "Avant: rénovation intérieure"
+      }
+    ],
+    "pendant": [],
+    "apres": [         
+      {
+        "src":"../build/images/projets/projets_interieurs/martin_juneau/apres (01).JPG",
+        "titre": "Après: rénovation intérieure"
+      }
+    ]
+  }
+},
+{
+  "client": "Sophie Mottard",
+  "ville": "",
+  "regions": "Rive-Sud de Montréal",
+  "titre":"Rénovation intérieur",
+  "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
+  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+  "type":"Projets interieurs",
+  "images":{
+    "avant": [
+      {
+        "src":"../build/images/projets/projets_interieurs/sophie_mottard/avant (1).JPG",
+        "titre": "Avant: rénovation intérieure"
+      }
+    ],
+    "pendant": [
+      {
+        "src":"../build/images/projets/projets_interieurs/sophie_mottard/pendant (38).JPG",
+        "titre": "Pendant: rénovation intérieure"
+      }
+    ],
+    "apres": [         
+      {
+        "src":"../build/images/projets/projets_interieurs/sophie_mottard/apres (8).JPG",
+        "titre": "Après: rénovation intérieure"
+      }
+    ]
+  }
+},
+{
+  "client": "Besnere Couture",
+  "ville": "",
+  "regions": "Rive-Sud de Montréal",
+  "titre":"Rénovation intérieur",
+  "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
+  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+  "type":"Projets interieurs",
+  "images":{
+    "avant": [],
+    "pendant": [],
+    "apres": [         
+      {
+        "src":"../build/images/projets/projets_interieurs/besnere_couture/apres (1).JPG",
+        "titre": "Après: rénovation intérieure"
+      },
+      {
+        "src":"../build/images/projets/projets_interieurs/besnere_couture/apres (9).JPG",
+        "titre": "Après: rénovation intérieure"
+      }
+    ]
+  }
+},
+{
+  "client": "Genifer Tremblay",
+  "ville": "",
+  "regions": "Rive-Sud de Montréal",
+  "titre":"Rénovation intérieur",
+  "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
+  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+  "type":"Projets interieurs",
+  "images":{
+    "avant": [
+      {
+        "src":"../build/images/projets/projets_interieurs/genifer_tremblay/0avant.jpg",
+        "titre": "Avant: rénovation intérieure"
+      }
+    ],
+    "pendant": [],
+    "apres": [         
+      {
+        "src":"../build/images/projets/projets_interieurs/genifer_tremblay/apres (01).jpg",
+        "titre": "Après: rénovation intérieure"
+      }
+    ]
+  }
+},
+{
+  "client": "Liliane Ataide",
+  "ville": "",
+  "regions": "Rive-Sud de Montréal",
+  "titre":"Rénovation intérieur",
+  "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
+  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+  "type":"Projets interieurs",
+  "images":{
+    "avant": [],
+    "pendant": [],
+    "apres": [         
+      {
+        "src":"../build/images/projets/projets_interieurs/liliane_ataide/apres (01).jpg",
+        "titre": "Après: rénovation intérieure"
+      },
+      {
+        "src":"../build/images/projets/projets_interieurs/liliane_ataide/apres (06).jpg",
+        "titre": "Après: rénovation intérieure"
+      }
+    ]
+  }
+},
+{
+  "client": "Stéphane Boudrault",
+  "ville": "",
+  "regions": "Rive-Sud de Montréal",
+  "titre":"Rénovation intérieur",
+  "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
+  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+  "type":"Projets interieurs",
+  "images":{
+    "avant": [],
+    "pendant": [],
+    "apres": [         
+      {
+        "src":"../build/images/projets/projets_interieurs/stephane_boudrault/apres (1).JPG",
+        "titre": "Après: rénovation intérieure"
+      },
+      {
+        "src":"../build/images/projets/projets_interieurs/stephane_boudrault/apres (2).JPG",
+        "titre": "Après: rénovation intérieure"
+      }
+    ]
+  }
+},
+{
+  "client": "Sylvie Ménard",
+  "ville": "",
+  "regions": "Rive-Sud de Montréal",
+  "titre":"Transormation en maison bi-génération",
+  "sousTitre": "Projet réalisé sur la Rive-Sud de Montréal",
+  "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consequuntur, sunt impedit tenetur minus beatae blanditiis ad, magni officia iusto error necessitatibus voluptatum voluptatem ipsam repudiandae dicta. At, cum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos distinctio similique obcaecati nobis tempore fugit debitis aspernatur eaque commodi fugiat esse corporis, sequi sapiente incidunt voluptates unde culpa modi.",
+  "type":"Projets interieurs",
+  "images":{
+    "avant": [],
+    "pendant": [],
+    "apres": [         
+      {
+        "src":"../build/images/projets/projets_interieurs/sylvie_menard/apres (2).JPG",
+        "titre": "Après: rénovation intérieure"
+      },
+      {
+        "src":"../build/images/projets/projets_interieurs/sylvie_menard/apres (11).JPG",
+        "titre": "Après: rénovation intérieure"
+      }
+    ]
+  }
+}
 
 ]

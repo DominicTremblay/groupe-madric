@@ -1,15 +1,6 @@
 $(document).ready(function(){
 
-  function readJsonFile(url, cb) {
-    $.getJSON(url)
-    .done(function(data) {
-      cb(data)
-    })
-    .fail(function(err) {
-      console.log("Error: ", err)
-    });
-  }
-
+  // create a slide for the project page
   function createSlide(slideData) {
 
     var $slideDiv = $('<div>').addClass('swiper-slide');
@@ -26,6 +17,7 @@ $(document).ready(function(){
       return $slideDiv;
   }
 
+  // produce the description div of a project
   function createDescription(projectData) {
 
     var $containerDiv = $('<div>');
@@ -43,103 +35,29 @@ $(document).ready(function(){
 
   }
 
+  // create slides from project images and add it to the selector
   function createSlides(images, selector) {
     $.each(images, function(index, image) {
       selector.append(createSlide(image));
     })
   }
 
-  
-  function createCard(cardData) {
-
-    var $cardDiv = $('<div>').addClass('card');
-    var $dimImageDiv = $('<div>').addClass('blurring dimmable image');
-    var $uiDimmerDiv = $('<div>').addClass('ui dimmer');
-    var $contentDiv = $('<div>').addClass('content');
-    var $centerDiv = $('<div>').addClass('center');
-
-    $('<a>')
-      .addClass('ui inverted button')
-      .attr('href',cardData.url)
-      .attr('data-projet','1')
-      .text('Voir le projet')
-      .appendTo($centerDiv);
-
-      var $img = $('<img>')
-        .attr('src',cardData.src)
-        .attr('alt',cardData.alt)
-
-     $contentDiv.append($centerDiv);
-     $uiDimmerDiv.append($contentDiv);
-     $dimImageDiv
-      .append($uiDimmerDiv)
-      .append($img);
-
-      $bodyContentDiv = $('<div>').addClass('content');
-      $headerDiv = $('<div>')
-        .addClass('header')
-        .text(cardData.titre);
-      $metaDiv = $('<div>')
-        .addClass('meta');
-
-      $('<span>')
-        .addClass('location')
-        .text(cardData.localisation)
-        .appendTo($metaDiv);
-      
-      $headerDiv.append($metaDiv);
-      $bodyContentDiv.append($headerDiv);
-
-      $cardDiv.append($dimImageDiv);
-      $cardDiv.append($bodyContentDiv);
-      return $cardDiv;
-  }
-
-  function nextIndex(projectsArr) {
-    var index = 0;
-    return function() {
-      if (index >= projectsArr.length) {
-        index = 0;
-      }
-      return index++;
-    }
-  }
-
-  function createCards(nbCards, projectsData, nextIndex) {
-    for (var i=0; i < nbCards; i++ ) {
-      var randomIndex = Math.floor(Math.random() * projectsData.length);
-      var projectData = projectsData[nextIndex()];
-
-      var url = 'projet-renovation-' + projectData.client
-        .toLowerCase()
-        .normalize('NFD').replace(/[\u0300-\u036f]/g, "")
-        .split(' ')
-        .join('-') + '.html';
-
-      var image = projectData.images.apres[0] ? projectData.images.apres[0] : projectData.images.avant[0]
-      var projet = 'Projet: ' + projectData.client + projectData.ville;
-
-
-      var cardData = {
-        url: url,
-        src: image.src,
-        alt: projet,
-        titre: projectData.titre,
-        localisation: projectData.ville ? projectData.client + ', ' + projectData.ville : projectData.client
-      }
-
-
-      $('.ui.raised.special.cards').prepend(createCard(cardData));
-    }
-
-  }
-
   function createProject(data) {
-
-
 
     var client = $('div.active.section').text().split('Projet: ').join('');
     var projectData = data.find(project => project.client === client);
+
+    
+    $('.next-project').on('click', function(e) {
+      var nextProject = data[nextProjectIndex(data, client)];
+      window.location.href = createProjectUrl('', nextProject.client);
+    });
+
+    $('.previous-project').on('click', function(e) {
+      var previousProject = data[previousProjectIndex(data, client)];
+      window.location.href = createProjectUrl('', previousProject.client);
+    });
+
 
     var imagesAvant = projectData.images.avant;
     var imagesPendant = projectData.images.pendant;
@@ -159,8 +77,60 @@ $(document).ready(function(){
 
     var next = nextIndex(data);
     
-    createCards(4, data, next);
+    createCards(4, data, next,'','forward', function(cardData){
+      $('.ui.raised.special.cards').prepend(createCard(cardData));
+    });
   
+    $('.right.chevron.icon').on('click', function(e) {
+      $cards = $('.ui.raised.special.cards .card');
+      $cards.remove();
+      createCards(4, data, next,'', 'forward', function(cardData){
+        $('.ui.raised.special.cards').prepend(createCard(cardData));
+      });
+    })
+
+    $('.left.chevron.icon').on('click', function(e) {
+      $cards = $('.ui.raised.special.cards .card');
+      $cards.remove();
+      createCards(4, data, next,'', 'backward', function(cardData){
+        $('.ui.raised.special.cards').prepend(createCard(cardData));
+      });
+    })
+
+  }
+
+  function createExteriorProjects(data) {
+    var extProjectsData = data.filter(project => project.type === 'Projets exterieurs')
+    var nextProjectIndex = nextIndex(extProjectsData);
+    var baseUrl = '/projets/'
+
+    createCards(6, extProjectsData, nextProjectIndex, baseUrl, 'forward',function(cardData){
+      $('.ui.raised.special.cards').prepend(createCard(cardData));
+    })
+  }
+
+  function createInteriorProjects(data) {
+    var intProjectsData = data.filter(project => project.type === 'Projets interieurs')
+    var nextProjectIndex = nextIndex(intProjectsData);
+    var baseUrl = '/projets/'
+    createCards(6, intProjectsData, nextProjectIndex, baseUrl, 'forward', function(cardData){
+      $('.ui.raised.special.cards').append(createCard(cardData));
+    })
+  }
+
+  function createAllProjects(data) {
+    var extProjectsData = data.filter(project => project.type === 'Projets exterieurs')
+    var intProjectsData = data.filter(project => project.type === 'Projets interieurs')
+    var allProjectsData = []
+      .concat(extProjectsData.slice(0,3))
+      .concat(intProjectsData.slice(0,3))
+    
+      var nextProjectIndex = nextIndex(allProjectsData);
+    var baseUrl = '/projets/'
+    createCards(6, allProjectsData, nextProjectIndex, baseUrl, 'forward', function(cardData){
+      $('.ui.raised.special.cards').append(createCard(cardData));
+    })
+
   }
 
   $('.ui.raised.special.cards').on('mouseenter', '.card', function(e) {
@@ -181,9 +151,26 @@ $(document).ready(function(){
     dimmer.removeClass('active').removeClass('visible').addClass('hidden');
   })
 
+  function selectPageView() {
+
+    switch($('main').data('view')) {
+      case 'projet':
+        return createProject;
+      break;
+      case 'projets-exterieurs':
+        return createExteriorProjects;
+      break;
+      case 'projets-interieurs':
+        return createInteriorProjects;
+      break;
+      case 'tous-projets':
+        return createAllProjects;
+      break;
+    }
+  }
 
 
-  readJsonFile('../../data/projets.json', createProject);
+  readJsonFile('../../data/projets.json', selectPageView());
 
 
 }); // document ready

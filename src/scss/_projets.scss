@@ -118,6 +118,7 @@ div.projets-similaires h3 {
 }
 
 .ui.stackable.grid div.center.aligned.row.autres-projets {
+  display: flex;
   justify-content: center;
   background-color: #f0f0f0;
   background-image: url('../images/36.png');
@@ -149,6 +150,44 @@ div.project-item-contact {
     justify-content: center;
   }
 }
+
+.other-projects-back, .other-projects-next {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 20%;
+
+  i.chevron.icon {
+    padding: 5em 1em;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 3px silver;
+  }
+
+  i.chevron.icon:hover {
+    background-color: rgba(248,248,255,0.8);
+    color: darkslategrey;
+    text-shadow: 1px 1px 1px silver;
+  }
+
+  i.left.chevron.icon {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+  }
+
+  i.right.chevron.icon {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+  }
+
+
+}
+
+
 
 @media only screen and (min-width: $largeMonitorBreakpoint) {
   div.project-slider {
