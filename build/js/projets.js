@@ -170,7 +170,7 @@ $(document).ready(function(){
   }
 
 
-  readJsonFile('../data/projets.json', selectPageView());
+  readJsonFile('https://dominictremblay.github.io/groupe-madric/data/projets.json', selectPageView());
 
 
 }); // document ready
